@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <title>ChartLanding</title>
 </head>
@@ -11,7 +12,7 @@
     <header class="header">
         <div class="container">
             <section class="hero">
-                <div class="hero__info">
+                <div data-aos="fade-right" class="hero__info">
                     <h2 class="hero__info__title">
                         Happy Tuesday, Lily. 
                     </h2>
@@ -19,12 +20,12 @@
                         Lorem ipsum dolor sit amet, dicam diceret molestiae in his. Eum putent possit ea. Ex mei discere feugiat, pri ex nisl delicata sapientem, quod bonorum appetere te per. Offendit dissentiunt at nam, ea has illud dolore deseruisse.
                     </p>
                 </div>
-                <div class="hero__diagram">
+                <div data-aos="fade-left" class="hero__diagram">
                     <img class="hero__diagram__img" src="./img/Project status.png" alt="Status">
                 </div>
             </section>
             <section class="about">
-                <div class="about__reviews">
+                <div data-aos="fade-down-right" class="about__reviews">
                     <div class="about__review__info">
                         <h3 class="about__review__info__title">
                             Creative Reviews
@@ -90,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about__documents">
+                <div data-aos="zoom-in-down" class="about__documents">
                     <h3 class="about__documents__title">
                         Recent Documents
                     </h3>
@@ -142,7 +143,7 @@
                         7 more documents
                     </button>
                 </div>
-                <div class="about__pictures">
+                <div data-aos="fade-down-left" class="about__pictures">
                     <img class="about__pictures__image" src="./img/Feed.png" alt="Feed">
                 </div>
             </section>
@@ -157,7 +158,9 @@
                     </span>
                     2 Pending Reviews
                 </h3>
-                <ul class="charts__list">
+                <ul data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500" class="charts__list">
                     <li class="charts__item">
                         <img class="charts__item__img" src="./img/Project 1.svg" alt="Chart">
                     </li>
@@ -176,7 +179,8 @@
                 </ul>
             </section>
             <section class="about">
-                <div class="about__reviews">
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom" class="about__reviews">
                     <div class="about__review__info">
                         <h3 class="about__review__info__title">
                             Creative Reviews
@@ -242,7 +246,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="about__documents">
+                <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" class="about__documents">
                     <ul class="about__documents__list">
                         <h3 class="about__documents__title">
                             Recent Documents
@@ -294,11 +300,17 @@
                         7 more documents
                     </button>
                 </div>
-                <div class="about__pictures">
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"  class="about__pictures">
                     <img class="about__pictures__image" src="./img/Feed.png" alt="Feed">
                 </div>
             </section>
         </div>
     </main>
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
